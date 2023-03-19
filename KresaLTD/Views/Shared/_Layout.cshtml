@@ -1,47 +1,445 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en"
+      class="home_page home_page_design s_layout1 isFreePackage s123-ads-banner-active page-loaded">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - KresaLTD</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/KresaLTD.styles.css" asp-append-version="true" />
+    <link rel="dns-prefetch preconnect" href="https://cdn-cms.f-static.com" crossorigin="anonymous">
+    <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="dns-prefetch preconnect" href="https://cdn-cms.f-static.net" crossorigin="anonymous">
+    <link rel="dns-prefetch preconnect" href="https://static1.s123-cdn-static-a.com" crossorigin="anonymous">
+    <link rel="dns-prefetch preconnect" href="https://static.s123-cdn-network-a.com" crossorigin="anonymous">
+    <link rel="dns-prefetch preconnect" href="https://cdn-cms-s.f-static.net" crossorigin="anonymous">
+    <link rel="preload"
+          href="https://static1.s123-cdn-static-a.com/uploads/7662469/2000_640ec43f315be_filter_640ec72903ae5.jpg" as="image">
+    <!-- Favicon -->
+    <link rel="shortcut icon"
+          href="https://cdn-cms-s.f-static.net/manager/websites/site123_website/files/logos/brand_files_2020/Icons/Png/Icon_blue.png?v=n82724"
+          type="image/x-icon">
+    <link rel="icon"
+          href="https://cdn-cms-s.f-static.net/manager/websites/site123_website/files/logos/brand_files_2020/Icons/Png/Icon_blue.png?v=n82724"
+          type="image/x-icon">
+    <link rel="manifest"
+          href="https://cdn-cms-s.f-static.net/versions/2/css/manifest.json?w=&amp;orderScreen=&amp;websiteID=7662469&amp;onlyContent=&amp;tranW=&amp;v=css_r181_40151487&amp;wd=640ec31a94484.site123.me">
+    <!-- Status Bar -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"><!-- 152px icon -->
+    <link rel="apple-touch-icon" sizes="152x152"
+          href="https://cdn-cms-s.f-static.net/ready_uploads/pwaScreenLogo/pwaImage.png?width=152&amp;height=152&amp;resizeType=pwaIcon&amp;w=&amp;orderScreen=&amp;websiteID=7662469&amp;tranW=&amp;v=css_r181_40151487">
+    <!-- 180px icon -->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="https://cdn-cms-s.f-static.net/ready_uploads/pwaScreenLogo/pwaImage.png?width=180&amp;height=180&amp;resizeType=pwaIcon&amp;w=&amp;orderScreen=&amp;websiteID=7662469&amp;tranW=&amp;v=css_r181_40151487">
+    <!-- 167px icon -->
+    <link rel="apple-touch-icon" sizes="167x167"
+          href="https://cdn-cms-s.f-static.net/ready_uploads/pwaScreenLogo/pwaImage.png?width=167&amp;height=167&amp;resizeType=pwaIcon&amp;w=&amp;orderScreen=&amp;websiteID=7662469&amp;tranW=&amp;v=css_r181_40151487">
+    <!-- Mobile Browser Address Bar Color -->
+    <meta name="theme-color" content="#df7861"> <!-- Regular Meta Info -->
+    <title class="s123-js-pjax">KresaLTD - КРЕСА ООД</title>
+    <meta name="description" content="KresaLTD - КРЕСА ООД" class="s123-js-pjax">
+    <meta name="keywords" content="" class="s123-js-pjax">
+    <link rel="canonical" href="https://640ec31a94484.site123.me/" class="s123-js-pjax">
+    <link rel="stylesheet" href="~/css/facebookMetaInfo.css" asp-append-version="false" /> <!-- Facebook Meta Info -->
+    <meta property="og:url" content="https://640ec31a94484.site123.me/" class="s123-js-pjax">
+    <meta property="og:image"
+          content="https://static1.s123-cdn-static-a.com/uploads/7662469/800_640ec43f315be_filter_640ec72903ae5.jpg"
+          class="s123-js-pjax">
+    <meta property="og:description" content="KresaLTD - КРЕСА ООД" class="s123-js-pjax">
+    <meta property="og:title" content="KresaLTD - КРЕСА ООД" class="s123-js-pjax">
+    <meta property="og:site_name" content="KresaLTD" class="s123-js-pjax">
+    <meta property="og:see_also" content="https://640ec31a94484.site123.me" class="s123-js-pjax">
+    <!-- Google+ Meta Info -->
+    <meta itemprop="name" content="KresaLTD - КРЕСА ООД" class="s123-js-pjax">
+    <meta itemprop="description" content="KresaLTD - КРЕСА ООД" class="s123-js-pjax">
+    <meta itemprop="image"
+          content="https://static1.s123-cdn-static-a.com/uploads/7662469/800_640ec43f315be_filter_640ec72903ae5.jpg"
+          class="s123-js-pjax"> <!-- Twitter Meta Info -->
+    <meta name="twitter:card" content="summary" class="s123-js-pjax">
+    <meta name="twitter:url" content="https://640ec31a94484.site123.me/" class="s123-js-pjax">
+    <meta name="twitter:title" content="KresaLTD - КРЕСА ООД" class="s123-js-pjax">
+    <meta name="twitter:description" content="KresaLTD - КРЕСА ООД" class="s123-js-pjax">
+    <meta name="twitter:image"
+          content="https://static1.s123-cdn-static-a.com/uploads/7662469/800_640ec43f315be_filter_640ec72903ae5.jpg"
+          class="s123-js-pjax">
+    <meta name="robots" content="all" class="s123-js-pjax">
+    <!-- Website CSS variables -->
+    <link rel="stylesheet" href="~/css/websitevariables.css" asp-append-version="false" /><!-- Custom CSS --> <!-- Minimize CSS files -->
+    <link rel="stylesheet" href="https://cdn-cms-s.f-static.net/versions/2/css/minimize_main.css?v=n82724" type="text/css"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet"
+          href="https://cdn-cms-s.f-static.net/versions/2/css/websiteCSS.css?w=&amp;orderScreen=&amp;websiteID=7662469&amp;onlyContent=&amp;tranW=&amp;v=css_r181_40151487"
+          class="reloadable-css" type="text/css"> <!-- Froala Editor CSS --> <!-- Google AdSense -->
+    <link rel="stylesheet" class="f-a-css"
+          href="https://cdn-cms-s.f-static.net/files/font-awesome-4.7/css/font-awesome.min.css?v=n82724">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">KresaLTD</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
+<body id="page-top" data-aos-easing="ease" data-aos-duration="200" data-aos-delay="0">
+    <div class="body">
+        <div id="websiteHeader">
+            <nav id="mainNav" class="hidden-xs navbar-default navbar-fixed-top  opacity-slight affix">
+                <div class="site-container-wrapper">
+                    <div class="site_container">
+                        <div class="navbar-header">
+                            <a href="#page-top"
+                               class="s123-site-logo navbar-brand s123-w-l-s page-scroll">
+                                <img alt="KresaLTD" class="img-responsive"
+                                     src="https://static1.s123-cdn-static-a.com/uploads/7662469/400_6412ebf6af0f1.png"><span class="website-name website-name-preview-helper ">KresaLTD</span>
+                            </a>
+                        </div>
+                        <div id="top-menu">
+                            <ul class="navPages nav navbar-nav" style="opacity: 1;">
+                                <li class="moduleMenu">
+                                    <a class="page-scroll homepageMenu" href="#page-top">
+                                        <span class="txt-container">Начало</span>
+                                    </a>
+                                </li>
+                                <li class="moduleMenu" data-menu-module-id="64103377d5ee7">
+                                    <a class="page-scroll"
+                                       href="#section-64103377d5ee7"><span class="txt-container">Какво правим</span></a>
+                                </li>
+                                <li class="moduleMenu" data-menu-module-id="64103341d5ee3">
+                                    <a class="page-scroll"
+                                       href="#section-64103341d5ee3"><span class="txt-container">Проекти</span></a>
+                                </li>
+                                <li class="moduleMenu" data-menu-module-id="6410339bd5ef6">
+                                    <a class="page-scroll"
+                                       href="#section-6410339bd5ef6"><span class="txt-container">Проект</span></a>
+                                </li>
+                                <li class="moduleMenu" data-menu-module-id="641033f2d5f04">
+                                    <a class="page-scroll"
+                                       href="#section-641033f2d5f04"><span class="txt-container">Галерия</span></a>
+                                </li>
+                                <li class="moduleMenu" data-menu-module-id="64103430d5f08">
+                                    <a class="page-scroll"
+                                       href="#section-64103430d5f08"><span class="txt-container">Contact</span></a>
+                                </li>
+                                <li class="moduleMenu active" data-menu-module-id="641068fdd5f52">
+                                    <a class="page-scroll"
+                                       href="#section-641068fdd5f52"><span class="txt-container">Отзиви</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav> <!-- Sticky Menu --> <input type="hidden" id="stickyMenu" name="stickyMenu" value="on">
+        </div>
+        <nav id="mainNavMobile" class="navbar-fixed-top" style="opacity: 1;">
+            <div class="navPagesLeft">
+                <div class="header-menu-wrapper">
+                    <a data-close-location="left" data-menu-color="m-g" data-menu-type="0"
+                       data-menu-align="center" data-is-mobile="true" class="mobile-menu-btn actionButton" role="button"
+                       data-container="body" data-toggle="menuCallActionIcons">
+                        <i class="svg-m s123-icon-converter "
+                           data-icon-name="bars"
+                           style=" mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/bars.svg?v=2'); -webkit-mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/bars.svg?v=2');"
+                           data-ie11-classes="" alt="bars">&nbsp;</i>
+                    </a>
                 </div>
             </div>
+            <div class="navbar-header">
+                <a href="#page-top" class="s123-site-logo navbar-brand s123-w-l-s page-scroll">
+                    <img alt="KresaLTD" class="img-responsive"
+                         src="https://static1.s123-cdn-static-a.com/uploads/7662469/400_6412ebf6af0f1.png"><span class="website-name website-name-preview-helper ">KresaLTD</span>
+                </a>
+            </div>
         </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        <div id="top-menu-mobile" style="display:none;">
+            <ul>
+                <!-- Website Menu Pages -->
+                <li class="moduleMenu active">
+                    <a class="page-scroll homepageMenu" href="#page-top">
+                        <span class="txt-container">Начало</span>
+                    </a>
+                </li>
+                <li class="moduleMenu" data-menu-module-id="64103377d5ee7">
+                    <a class="page-scroll"
+                       href="#section-64103377d5ee7"><span class="txt-container">Какво правим</span></a>
+                </li>
+                <li class="moduleMenu" data-menu-module-id="64103341d5ee3">
+                    <a class="page-scroll"
+                       href="#section-64103341d5ee3"><span class="txt-container">Проекти</span></a>
+                </li>
+                <li class="moduleMenu" data-menu-module-id="6410339bd5ef6">
+                    <a class="page-scroll"
+                       href="#section-6410339bd5ef6"><span class="txt-container">Проект</span></a>
+                </li>
+                <li class="moduleMenu" data-menu-module-id="641033f2d5f04">
+                    <a class="page-scroll"
+                       href="#section-641033f2d5f04"><span class="txt-container">Галерия</span></a>
+                </li>
+                <li class="moduleMenu" data-menu-module-id="64103430d5f08">
+                    <a class="page-scroll"
+                       href="#section-64103430d5f08"><span class="txt-container">Contact</span></a>
+                </li>
+                <li class="moduleMenu" data-menu-module-id="641068fdd5f52">
+                    <a class="page-scroll"
+                       href="#section-641068fdd5f52"><span class="txt-container">Отзиви</span></a>
+                </li>
+                <!-- Website Footer Pages -->
+            </ul>
+        </div>
+        <div id="s123PjaxMainContainer">
+            <div id="s123ModulesContainer" class="s123-modules-container">
+                <section id="section-64103430d5f08" class="s123-module s123-module-contact layout-8 bg-primary"
+                         data-module-id="64103430d5f08" data-module-type-num="7">
+                    <div data-aos="fade-up" class="container-fluid page_header_style noBackground aos-init aos-animate">
+                        <div class="row">
+                            <div class="container moduleTitleContainer">
+                                <div class="row modulesTitle text-center">
+                                    <div class="col-xs-12">
+                                        <div class="page-header-wrap">
+                                            <h2 id="section-64103430d5f08-title" class="s123-page-header  ">Contact</h2>
+                                            <hr class="small">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container aos-init aos-animate" data-aos="fade-up">
+                        <form class="contactUsForm" data-click-action="" novalidate="novalidate">
+                            <div class="row preview-highlighter">
+                                <div class="col-xs-12 col-md-3">
+                                    <div class="form-group">
+                                        <input type="text" name="contact_name" placeholder="Name" class="form-control"
+                                               required="" data-msg-required="This field is required.">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-3">
+                                    <div class="form-group">
+                                        <input type="text" name="contact_phone" placeholder="Phone"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-3">
+                                    <div class="form-group">
+                                        <input type="text" name="contact_email" placeholder="Email address"
+                                               class="form-control s123-force-ltr" required="" data-msg-required="This field is required."
+                                               data-rule-email="true" data-msg-email="Please enter a valid email.">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" style="display: none;" name="contact_message"
+                                              placeholder="Message"></textarea>
+                                    <div class="col-xs-12 col-md-3">
+                                        <button type="submit" class="btn btn-primary btn-block"
+                                                aria-label="Contact Us">
+                                            Contact Us
+                                        </button>
+                                    </div>
+                                </div><input type="hidden" name="w" value=""><input type="hidden" name="websiteID"
+                                                                                    value="7662469"><input type="hidden" name="moduleID" value="64103430d5f08"><input type="hidden"
+                                                                                                                                                                      name="recaptchaToken" value="">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="s123-module-contact-map">
+                        <div class="map-box">
+                            <div class="contact-info">
+                                <div class="preview-highlighter">
+                                    <div class="text-left">
+                                        <ul class="list-unstyled contact-as-details-container">
+                                            <li>Manhattan, New York, NY, United States</li>
+                                        </ul>
+                                        <ul class="list-unstyled contact-as-details-container">
+                                            <li>
+                                                <a href="mailto:example@example.com">
+                                                    <i class="svg-m s123-icon-converter  fa-fw"
+                                                       data-icon-name="envelope-o"
+                                                       style=" mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/envelope-o.svg?v=2'); -webkit-mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/envelope-o.svg?v=2');"
+                                                       data-ie11-classes=" fa-fw" alt="envelope-o">&nbsp;</i>example@example.com
+                                                </a>
+                                            </li>
+                                            <li class="open_hours_field">
+                                                <i class="svg-m s123-icon-converter fa-fw" data-icon-name="clock-o"
+                                                   style=" mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/clock-o.svg?v=2'); -webkit-mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/clock-o.svg?v=2');"
+                                                   data-ie11-classes="fa-fw" alt="clock-o">&nbsp;</i>Mon-Fri - 08:00-19:00
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s123-module-contact-map">
+                                <iframe id="contact_6412ec8b6cbb2"
+                                        class="map-container iframeLazyload entered loaded"
+                                        data-src="https://maps-cdn.site123.com/include/globalMapDisplay.php?q=Manhattan%2C+New+York%2C+NY%2C+United+States&amp;z=15&amp;l=en&amp;mapRTL=0&amp;ilfc="
+                                        frameborder="0" style="pointer-events: none;" data-ll-status="loaded"
+                                        src="https://maps-cdn.site123.com/include/globalMapDisplay.php?q=Manhattan%2C+New+York%2C+NY%2C+United+States&amp;z=15&amp;l=en&amp;mapRTL=0&amp;ilfc="></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-641068fdd5f52" class="s123-module s123-module-faq layout-1" data-module-id="641068fdd5f52"
+                         data-module-type-num="11">
+                    <div data-aos="fade-up" class="container-fluid page_header_style noBackground aos-init aos-animate">
+                        <div class="row">
+                            <div class="container moduleTitleContainer">
+                                <div class="row modulesTitle text-center">
+                                    <div class="col-xs-12">
+                                        <div class="page-header-wrap">
+                                            <h2 id="section-641068fdd5f52-title" class="s123-page-header  ">Отзиви</h2>
+                                            <hr class="small">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container aos-init aos-animate" data-aos="fade-up">
+                        <div class="text-center">
+                            <!-- Categories Area -->
+                            <div class="row" style="display:none;">
+                                <div class="s123-categories col-xs-12">
+                                    <div class="m-r-s"></div>
+                                    <ul class="items-categories-container">
+                                        <li data-categories-filter="all" class="active"><a href="#">All</a></li>
+                                    </ul>
+                                    <div class="m-r-s"></div>
+                                </div>
+                            </div><!-- Items Area -->
+                            <div class="row">
+                                <div class="faq-category" data-categories-filter="all" style="display: block;">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="box box-primary s123-box-padding s123-box-margin-bottom s123-box-top-primary-border s123-box-flying-up preview-highlighter"
+                                             data-unique-id="641068fb4a7fd">
+                                            <h4>Do you need an effective FAQ list?</h4>
+                                            <div class="responsive-handler fr-view breakable">
+                                                This is one of the places you can use for adding
+                                                FAQ answers on your website. You can edit all of this text and replace it with anything you want
+                                                to answer for your client. Edit your FAQ page from the Pages tab by clicking the edit button.
+                                            </div>
+                                        </div>
+                                        <div class="box box-primary s123-box-padding s123-box-margin-bottom s123-box-top-primary-border s123-box-flying-up preview-highlighter"
+                                             data-unique-id="641068fb48fba">
+                                            <h4>Got questions that need answering?</h4>
+                                            <div class="responsive-handler fr-view breakable">
+                                                This is one of the places you can use for adding
+                                                FAQ answers on your website. You can edit all of this text and replace it with anything you want
+                                                to answer for your client. Edit your FAQ page from the Pages tab by clicking the edit
+                                                button.&nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="box box-primary s123-box-padding s123-box-margin-bottom s123-box-top-primary-border s123-box-flying-up preview-highlighter"
+                                             data-unique-id="641068fb47a10">
+                                            <h4>What do you want your clients to know?</h4>
+                                            <div class="responsive-handler fr-view breakable">
+                                                This is one of the places you can use for adding
+                                                FAQ answers on your website. You can edit all of this text and replace it with anything you want
+                                                to answer for your client. Edit your FAQ page from the Pages tab by clicking the edit button.
+                                            </div>
+                                        </div>
+                                        <div class="box box-primary s123-box-padding s123-box-margin-bottom s123-box-top-primary-border s123-box-flying-up preview-highlighter"
+                                             data-unique-id="641068fb460c1">
+                                            <h4>Want your clients to learn about your business?</h4>
+                                            <div class="responsive-handler fr-view breakable">
+                                                This is one of the places you can use for adding
+                                                FAQ answers on your website. You can edit all of this text and replace it with anything you want
+                                                to answer for your client. Edit your FAQ page from the Pages tab by clicking the edit button.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </section>
+                <section id="section-64107230d5f6d"
+                         class="s123-module s123-promo-module-v2 bg-primary big-site123 style-21 basic has-custom-height"
+                         style="position: relative;background-color: #000000;color:#ffffff;" data-module-id="64107230d5f6d"
+                         data-module-type-num="1000" data-tool-style="21">
+                    <div class="container big-site123 promo-container" style="min-height:57vh; " data-custom-padding-top=""
+                         data-custom-padding-bottom="" data-top-shape-size="17" data-top-shape-hide-from-mobile=""
+                         data-bottom-shape-size="17" data-bottom-shape-hide-from-mobile="" data-top-shape-color=""
+                         data-bottom-shape-color="">
+                        <div class="flex  p-t-c">
+                            <h3 id="64107230d5f6d-promoText1" class="text promoText1 h1 weight700 Open Sans aos-init"
+                                data-aos="fade-up"
+                                style="color: rgb(255, 255, 255); font-size: 51px; letter-spacing: 6px; word-spacing: 4px; line-height: 1; margin-top: 0px; margin-bottom: 10px;">
+                                Свържи се с нас и не изпускай
+                            </h3>
+                            <div data-aos="fade-up" class="redirect-buttons-container aos-init">
+                                <div class="preview-highlighter" data-open-tool="button-options"
+                                     style="margin-top:0px; margin-bottom:0px; " data-type="buttons">
+                                    <a href="/contact"
+                                       id="promoRedirectButton1" class="buttonText btn btn-primary btn-xl btn-primary-transparent"
+                                       target="_blank" style="margin-right:10px;" aria-label="Свържи се с нас и да започваме">
+                                        Свържи се с
+                                        нас и да започваме
+                                    </a><a href="" id="promoRedirectButton2"
+                                           class="button2Text btn btn-primary btn-xl  hidden" target="_blank" style="margin-left:10px;"
+                                           aria-label=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-image-bg bgLazyload entered loaded"
+                         style="opacity: 0.5; background-position: 50% 61.82%; background-image: url(&quot;https://static1.s123-cdn-static-a.com/uploads/7662469/2000_641072bb375f2.jpg&quot;);"
+                         data-bg="https://static1.s123-cdn-static-a.com/uploads/7662469/2000_641072bb375f2.jpg" role="img"
+                         aria-label="Свържи се с нас и не изпускай" data-ll-status="loaded"></div>
+                </section>
+
+                @if (TempData["message"] != null)
+                {
+                    <div class="alert alert-danger alert-dismissible fade show">
+                        @TempData["message"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        </button>
+                    </div>
+                }
+                @RenderBody()
+            </div>
+            <footer class="global_footer footer_2">
+                <div class="part1">
+                    <div class="hidden-xs">
+                        <ul class="navPages nav navbar-nav" style="opacity: 1;">
+                            <li class="moduleMenu active">
+                                <a class="page-scroll homepageMenu" href="#page-top">
+                                    <span class="txt-container">Начало</span>
+                                </a>
+                            </li>
+                            <li class="moduleMenu" data-menu-module-id="64103377d5ee7">
+                                <a class="page-scroll"
+                                   href="#section-64103377d5ee7"><span class="txt-container">Какво правим</span></a>
+                            </li>
+                            <li class="moduleMenu" data-menu-module-id="64103341d5ee3">
+                                <a class="page-scroll"
+                                   href="#section-64103341d5ee3"><span class="txt-container">Проекти</span></a>
+                            </li>
+                            <li class="moduleMenu" data-menu-module-id="6410339bd5ef6">
+                                <a class="page-scroll"
+                                   href="#section-6410339bd5ef6"><span class="txt-container">Проект</span></a>
+                            </li>
+                            <li class="moduleMenu" data-menu-module-id="641033f2d5f04">
+                                <a class="page-scroll"
+                                   href="#section-641033f2d5f04"><span class="txt-container">Галерия</span></a>
+                            </li>
+                            <li class="moduleMenu" data-menu-module-id="64103430d5f08">
+                                <a class="page-scroll"
+                                   href="#section-64103430d5f08"><span class="txt-container">Contact</span></a>
+                            </li>
+                            <li class="moduleMenu" data-menu-module-id="641068fdd5f52">
+                                <a class="page-scroll"
+                                   href="#section-641068fdd5f52"><span class="txt-container">Отзиви</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div> Copyright © 2023 All rights reserved - <span class="website-name-preview-helper">KresaLTD</span> </div>
+                    <div class="clearfix upgrade-website-preview-helper">
+                        Powered By <a rel="nofollow" target="_blank"
+                                      href="https://www.site123.com">SITE123</a> - <a rel="nofollow" target="_blank"
+                                                                                      href="https://www.site123.com">Website creator</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - KresaLTD - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
