@@ -17,14 +17,10 @@
     <link rel="preload"
           href="https://static1.s123-cdn-static-a.com/uploads/7662469/2000_640ec43f315be_filter_640ec72903ae5.jpg" as="image">
     <!-- Favicon -->
-    <link rel="shortcut icon"
-          href="https://cdn-cms-s.f-static.net/manager/websites/site123_website/files/logos/brand_files_2020/Icons/Png/Icon_blue.png?v=n82724"
-          type="image/x-icon">
-    <link rel="icon"
-          href="https://cdn-cms-s.f-static.net/manager/websites/site123_website/files/logos/brand_files_2020/Icons/Png/Icon_blue.png?v=n82724"
-          type="image/x-icon">
-    <link rel="manifest"
-          href="https://cdn-cms-s.f-static.net/versions/2/css/manifest.json?w=&amp;orderScreen=&amp;websiteID=7662469&amp;onlyContent=&amp;tranW=&amp;v=css_r181_40151487&amp;wd=640ec31a94484.site123.me">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Status Bar -->
     <meta name="apple-mobile-web-app-status-bar-style" content="default"><!-- 152px icon -->
     <link rel="apple-touch-icon" sizes="152x152"
@@ -85,39 +81,35 @@
                             <a href="#page-top"
                                class="s123-site-logo navbar-brand s123-w-l-s page-scroll">
                                 <img alt="KresaLTD" class="img-responsive"
-                                     src="https://static1.s123-cdn-static-a.com/uploads/7662469/400_6412ebf6af0f1.png"><span class="website-name website-name-preview-helper ">KresaLTD</span>
+                                     src="https://static1.s123-cdn-static-a.com/uploads/7662469/400_6412ebf6af0f1.png"><span class="website-name website-name-preview-helper ">Креса ООД</span>
                             </a>
                         </div>
                         <div id="top-menu">
                             <ul class="navPages nav navbar-nav" style="opacity: 1;">
                                 <li class="moduleMenu">
-                                    <a class="page-scroll homepageMenu" href="#page-top">
+                                    <a class="page-scroll homepageMenu" asp-area="" asp-controller="Home" asp-action="Index">
                                         <span class="txt-container">Начало</span>
                                     </a>
                                 </li>
                                 <li class="moduleMenu" data-menu-module-id="64103377d5ee7">
                                     <a class="page-scroll"
-                                       href="#section-64103377d5ee7"><span class="txt-container">Какво правим</span></a>
+                                       asp-area="" asp-controller="WhatWeDo" asp-action="All"><span class="txt-container">Какво правим</span></a>
                                 </li>
                                 <li class="moduleMenu" data-menu-module-id="64103341d5ee3">
                                     <a class="page-scroll"
-                                       href="#section-64103341d5ee3"><span class="txt-container">Проекти</span></a>
-                                </li>
-                                <li class="moduleMenu" data-menu-module-id="6410339bd5ef6">
-                                    <a class="page-scroll"
-                                       href="#section-6410339bd5ef6"><span class="txt-container">Проект</span></a>
+                                       asp-area="" asp-controller="Project" asp-action="All"><span class="txt-container">Проекти</span></a>
                                 </li>
                                 <li class="moduleMenu" data-menu-module-id="641033f2d5f04">
                                     <a class="page-scroll"
-                                       href="#section-641033f2d5f04"><span class="txt-container">Галерия</span></a>
-                                </li>
-                                <li class="moduleMenu" data-menu-module-id="64103430d5f08">
-                                    <a class="page-scroll"
-                                       href="#section-64103430d5f08"><span class="txt-container">Contact</span></a>
+                                       asp-area="" asp-controller="Gallery" asp-action="All"><span class="txt-container">Галерия</span></a>
                                 </li>
                                 <li class="moduleMenu active" data-menu-module-id="641068fdd5f52">
                                     <a class="page-scroll"
-                                       href="#section-641068fdd5f52"><span class="txt-container">Отзиви</span></a>
+                                       asp-area="" asp-controller="Review" asp-action="All"><span class="txt-container">Отзиви</span></a>
+                                </li>
+                                <li class="moduleMenu" data-menu-module-id="64103430d5f08">
+                                    <a class="page-scroll"
+                                       asp-area="" asp-controller="Home" asp-action="Contacts"><span class="txt-container">Контакти</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -182,171 +174,17 @@
         </div>
         <div id="s123PjaxMainContainer">
             <div id="s123ModulesContainer" class="s123-modules-container">
-                <section id="section-64103430d5f08" class="s123-module s123-module-contact layout-8 bg-primary"
-                         data-module-id="64103430d5f08" data-module-type-num="7">
-                    <div data-aos="fade-up" class="container-fluid page_header_style noBackground aos-init aos-animate">
-                        <div class="row">
-                            <div class="container moduleTitleContainer">
-                                <div class="row modulesTitle text-center">
-                                    <div class="col-xs-12">
-                                        <div class="page-header-wrap">
-                                            <h2 id="section-64103430d5f08-title" class="s123-page-header  ">Contact</h2>
-                                            <hr class="small">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                @if (TempData["message"] != null)
+                {
+                    <div class="alert alert-danger alert-dismissible fade show">
+                        @TempData["message"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        </button>
                     </div>
-                    <div class="container aos-init aos-animate" data-aos="fade-up">
-                        <form class="contactUsForm" data-click-action="" novalidate="novalidate">
-                            <div class="row preview-highlighter">
-                                <div class="col-xs-12 col-md-3">
-                                    <div class="form-group">
-                                        <input type="text" name="contact_name" placeholder="Name" class="form-control"
-                                               required="" data-msg-required="This field is required.">
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-md-3">
-                                    <div class="form-group">
-                                        <input type="text" name="contact_phone" placeholder="Phone"
-                                               class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-md-3">
-                                    <div class="form-group">
-                                        <input type="text" name="contact_email" placeholder="Email address"
-                                               class="form-control s123-force-ltr" required="" data-msg-required="This field is required."
-                                               data-rule-email="true" data-msg-email="Please enter a valid email.">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" style="display: none;" name="contact_message"
-                                              placeholder="Message"></textarea>
-                                    <div class="col-xs-12 col-md-3">
-                                        <button type="submit" class="btn btn-primary btn-block"
-                                                aria-label="Contact Us">
-                                            Contact Us
-                                        </button>
-                                    </div>
-                                </div><input type="hidden" name="w" value=""><input type="hidden" name="websiteID"
-                                                                                    value="7662469"><input type="hidden" name="moduleID" value="64103430d5f08"><input type="hidden"
-                                                                                                                                                                      name="recaptchaToken" value="">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="s123-module-contact-map">
-                        <div class="map-box">
-                            <div class="contact-info">
-                                <div class="preview-highlighter">
-                                    <div class="text-left">
-                                        <ul class="list-unstyled contact-as-details-container">
-                                            <li>Manhattan, New York, NY, United States</li>
-                                        </ul>
-                                        <ul class="list-unstyled contact-as-details-container">
-                                            <li>
-                                                <a href="mailto:example@example.com">
-                                                    <i class="svg-m s123-icon-converter  fa-fw"
-                                                       data-icon-name="envelope-o"
-                                                       style=" mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/envelope-o.svg?v=2'); -webkit-mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/envelope-o.svg?v=2');"
-                                                       data-ie11-classes=" fa-fw" alt="envelope-o">&nbsp;</i>example@example.com
-                                                </a>
-                                            </li>
-                                            <li class="open_hours_field">
-                                                <i class="svg-m s123-icon-converter fa-fw" data-icon-name="clock-o"
-                                                   style=" mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/clock-o.svg?v=2'); -webkit-mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/clock-o.svg?v=2');"
-                                                   data-ie11-classes="fa-fw" alt="clock-o">&nbsp;</i>Mon-Fri - 08:00-19:00
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="s123-module-contact-map">
-                                <iframe id="contact_6412ec8b6cbb2"
-                                        class="map-container iframeLazyload entered loaded"
-                                        data-src="https://maps-cdn.site123.com/include/globalMapDisplay.php?q=Manhattan%2C+New+York%2C+NY%2C+United+States&amp;z=15&amp;l=en&amp;mapRTL=0&amp;ilfc="
-                                        frameborder="0" style="pointer-events: none;" data-ll-status="loaded"
-                                        src="https://maps-cdn.site123.com/include/globalMapDisplay.php?q=Manhattan%2C+New+York%2C+NY%2C+United+States&amp;z=15&amp;l=en&amp;mapRTL=0&amp;ilfc="></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="section-641068fdd5f52" class="s123-module s123-module-faq layout-1" data-module-id="641068fdd5f52"
-                         data-module-type-num="11">
-                    <div data-aos="fade-up" class="container-fluid page_header_style noBackground aos-init aos-animate">
-                        <div class="row">
-                            <div class="container moduleTitleContainer">
-                                <div class="row modulesTitle text-center">
-                                    <div class="col-xs-12">
-                                        <div class="page-header-wrap">
-                                            <h2 id="section-641068fdd5f52-title" class="s123-page-header  ">Отзиви</h2>
-                                            <hr class="small">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container aos-init aos-animate" data-aos="fade-up">
-                        <div class="text-center">
-                            <!-- Categories Area -->
-                            <div class="row" style="display:none;">
-                                <div class="s123-categories col-xs-12">
-                                    <div class="m-r-s"></div>
-                                    <ul class="items-categories-container">
-                                        <li data-categories-filter="all" class="active"><a href="#">All</a></li>
-                                    </ul>
-                                    <div class="m-r-s"></div>
-                                </div>
-                            </div><!-- Items Area -->
-                            <div class="row">
-                                <div class="faq-category" data-categories-filter="all" style="display: block;">
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="box box-primary s123-box-padding s123-box-margin-bottom s123-box-top-primary-border s123-box-flying-up preview-highlighter"
-                                             data-unique-id="641068fb4a7fd">
-                                            <h4>Do you need an effective FAQ list?</h4>
-                                            <div class="responsive-handler fr-view breakable">
-                                                This is one of the places you can use for adding
-                                                FAQ answers on your website. You can edit all of this text and replace it with anything you want
-                                                to answer for your client. Edit your FAQ page from the Pages tab by clicking the edit button.
-                                            </div>
-                                        </div>
-                                        <div class="box box-primary s123-box-padding s123-box-margin-bottom s123-box-top-primary-border s123-box-flying-up preview-highlighter"
-                                             data-unique-id="641068fb48fba">
-                                            <h4>Got questions that need answering?</h4>
-                                            <div class="responsive-handler fr-view breakable">
-                                                This is one of the places you can use for adding
-                                                FAQ answers on your website. You can edit all of this text and replace it with anything you want
-                                                to answer for your client. Edit your FAQ page from the Pages tab by clicking the edit
-                                                button.&nbsp;
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="box box-primary s123-box-padding s123-box-margin-bottom s123-box-top-primary-border s123-box-flying-up preview-highlighter"
-                                             data-unique-id="641068fb47a10">
-                                            <h4>What do you want your clients to know?</h4>
-                                            <div class="responsive-handler fr-view breakable">
-                                                This is one of the places you can use for adding
-                                                FAQ answers on your website. You can edit all of this text and replace it with anything you want
-                                                to answer for your client. Edit your FAQ page from the Pages tab by clicking the edit button.
-                                            </div>
-                                        </div>
-                                        <div class="box box-primary s123-box-padding s123-box-margin-bottom s123-box-top-primary-border s123-box-flying-up preview-highlighter"
-                                             data-unique-id="641068fb460c1">
-                                            <h4>Want your clients to learn about your business?</h4>
-                                            <div class="responsive-handler fr-view breakable">
-                                                This is one of the places you can use for adding
-                                                FAQ answers on your website. You can edit all of this text and replace it with anything you want
-                                                to answer for your client. Edit your FAQ page from the Pages tab by clicking the edit button.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- /.row -->
-                    </div><!-- /.container -->
-                </section>
+                }
+
+                @RenderBody()
                 <section id="section-64107230d5f6d"
                          class="s123-module s123-promo-module-v2 bg-primary big-site123 style-21 basic has-custom-height"
                          style="position: relative;background-color: #000000;color:#ffffff;" data-module-id="64107230d5f6d"
@@ -381,61 +219,48 @@
                          data-bg="https://static1.s123-cdn-static-a.com/uploads/7662469/2000_641072bb375f2.jpg" role="img"
                          aria-label="Свържи се с нас и не изпускай" data-ll-status="loaded"></div>
                 </section>
-
-                @if (TempData["message"] != null)
-                {
-                    <div class="alert alert-danger alert-dismissible fade show">
-                        @TempData["message"]
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                        </button>
-                    </div>
-                }
-                @RenderBody()
             </div>
             <footer class="global_footer footer_2">
                 <div class="part1">
                     <div class="hidden-xs">
                         <ul class="navPages nav navbar-nav" style="opacity: 1;">
-                            <li class="moduleMenu active">
-                                <a class="page-scroll homepageMenu" href="#page-top">
+                            <li class="moduleMenu">
+                                <a class="page-scroll homepageMenu" asp-area="" asp-controller="Home" asp-action="Index">
                                     <span class="txt-container">Начало</span>
                                 </a>
                             </li>
                             <li class="moduleMenu" data-menu-module-id="64103377d5ee7">
                                 <a class="page-scroll"
-                                   href="#section-64103377d5ee7"><span class="txt-container">Какво правим</span></a>
+                                   asp-area="" asp-controller="WhatWeDo" asp-action="All"><span class="txt-container">Какво правим</span></a>
                             </li>
                             <li class="moduleMenu" data-menu-module-id="64103341d5ee3">
                                 <a class="page-scroll"
-                                   href="#section-64103341d5ee3"><span class="txt-container">Проекти</span></a>
-                            </li>
-                            <li class="moduleMenu" data-menu-module-id="6410339bd5ef6">
-                                <a class="page-scroll"
-                                   href="#section-6410339bd5ef6"><span class="txt-container">Проект</span></a>
+                                   asp-area="" asp-controller="Project" asp-action="All"><span class="txt-container">Проекти</span></a>
                             </li>
                             <li class="moduleMenu" data-menu-module-id="641033f2d5f04">
                                 <a class="page-scroll"
-                                   href="#section-641033f2d5f04"><span class="txt-container">Галерия</span></a>
+                                   asp-area="" asp-controller="Gallery" asp-action="All"><span class="txt-container">Галерия</span></a>
+                            </li>
+                            <li class="moduleMenu active" data-menu-module-id="641068fdd5f52">
+                                <a class="page-scroll"
+                                   asp-area="" asp-controller="Review" asp-action="All"><span class="txt-container">Отзиви</span></a>
+                            </li>
+                            <li class="moduleMenu active">
+                                <a class="page-scroll"
+                                   asp-area="" asp-controller="Home" asp-action="AboutUs"><span class="txt-container">За нас</span></a>
                             </li>
                             <li class="moduleMenu" data-menu-module-id="64103430d5f08">
                                 <a class="page-scroll"
-                                   href="#section-64103430d5f08"><span class="txt-container">Contact</span></a>
-                            </li>
-                            <li class="moduleMenu" data-menu-module-id="641068fdd5f52">
-                                <a class="page-scroll"
-                                   href="#section-641068fdd5f52"><span class="txt-container">Отзиви</span></a>
+                                   asp-area="" asp-controller="Home" asp-action="Contacts"><span class="txt-container">Контакти</span></a>
                             </li>
                         </ul>
                     </div>
-
-
-                    <div> Copyright © 2023 All rights reserved - <span class="website-name-preview-helper">KresaLTD</span> </div>
-                    <div class="clearfix upgrade-website-preview-helper">
-                        Powered By <a rel="nofollow" target="_blank"
-                                      href="https://www.site123.com">SITE123</a> - <a rel="nofollow" target="_blank"
-                                                                                      href="https://www.site123.com">Website creator</a>
-                    </div>
                 </div>
+
+                <div>
+                    Copyright © 2023 All rights reserved - <span class="website-name-preview-helper">KresaLTD</span>
+                </div>
+
             </footer>
         </div>
     </div>
